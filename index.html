@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Fetcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Sample</h1>
+        <form id="github-form">
+            <input type="text" id="username" placeholder="GitHub username..." required>
+            <button type="submit">Pull User Data</button>
+        </form>
+
+        <div id="user-info" style="margin-top: 20px;">
+            <h2 id="user-name"></h2>
+            <img id="user-avatar" alt="User Avatar" style="display: none;"/>
+            <p>Followers: <span id="followers"></span> - Following: <span id="following"></span></p>
+            <p>Repos: <span id="repo-count"></span></p>
+        </div>
+        <ul id="repos-list" class="repos-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
